@@ -74,7 +74,7 @@ public class Main {
         //Mở toàn bộ link trong footer - Cách 1
         for (WebElement link : footerLinks) {
             String href = link.getAttribute("href");
-            String linkText = link.getText();
+            String linkText = link.getText(); 
             if (href != null && !href.isEmpty()) {
                 try {
                     // Sử dụng tổ hợp phím để mở tab mới (COMMAND + ENTER cho MacOS)
