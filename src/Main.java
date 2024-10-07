@@ -10,8 +10,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         //Thiết lập ChromeDriver
-        //System.setProperty("webdriver.chrome.driver", "/Users/alive/Documents/Khoa/TestProgram/chromedriver-mac-x64/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "D:\\04 - Windows Software\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/alive/Documents/Khoa/TestProgram/chromedriver-mac-x64/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "D:\\04 - Windows Software\\chromedriver-win64\\chromedriver.exe");
 
         //Test push git...
 
@@ -78,11 +78,13 @@ public class Main {
             String href = link.getAttribute("href");
             String linkText = link.getText();
             if (href != null && !href.isEmpty()) {
-                try {mới (COMMAND + ENTER cho MacOS)
+                try {
                     //String keyboard = Keys.chord(Keys.COMMAND, Keys.ENTER);
-                    // Sử dụng tổ hợp phím để
-                    // Sử dụng tổ hợp phím để mở tab mở tab mới (CONTROL + ENTER cho Windows)
-                    String keyboard = Keys.chord(Keys.CONTROL, Keys.ENTER);
+                    // Sử dụng tổ hợp phím để mở tab  mới (COMMAND + ENTER cho MacOS)
+                    String keyboard = Keys.chord(Keys.COMMAND, Keys.ENTER);
+
+                    // Sử dụng tổ hợp phím để mở tab mới (CONTROL + ENTER cho Windows)
+                    //String keyboard = Keys.chord(Keys.CONTROL, Keys.ENTER);
                     link.sendKeys(keyboard);
                     System.out.println("Mở link: " + linkText + " || " + href);
                 } catch (Exception e) {
