@@ -13,7 +13,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "/Users/alive/Documents/Khoa/TestProgram/chromedriver-mac-x64/chromedriver");
         //System.setProperty("webdriver.chrome.driver", "D:\\04 - Windows Software\\chromedriver-win64\\chromedriver.exe");
 
-        //Test push git...
+        //Test push git branch develop
 
         //Khoi tao ChromeDriver
         WebDriver driver = new ChromeDriver();
